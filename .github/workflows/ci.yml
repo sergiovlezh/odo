@@ -1,0 +1,20 @@
+name: ci
+on:
+  pull_request: {}
+  push:
+    branches: [main, dev]
+  # when to run: on every PR + every push to main/dev
+jobs:
+  ci:
+    runs-on: ubuntu-latest # fresh Linux machine
+    steps:
+      - uses: actions/checkout@v4 # download your code
+      - uses: pnpm/action-setup@v4 # install pnpm (version from packageManager)
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm # cache the pnpm store
+      - run: pnpm install --frozen-lockfile # strict clean install
+      - run: pnpm run check # your domain self-check
+      - run: pnpm run build # tsc + vite build
+      - run: pnpm run lint # oxlint
