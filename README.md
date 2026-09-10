@@ -19,15 +19,15 @@ Se requiere el rewrite SPA en `vercel.json` (`/(.*)` -> `/index.html`).
 ## Uso
 
 ```bash
-npm install
-npm run dev      # http://localhost:5173
-npm run check    # jiti src/domain.selfcheck.ts
-npm run build    # tsc -b && vite build -> dist/
-npm run lint     # oxlint
+pnpm install
+pnpm dev        # http://localhost:5173
+pnpm check      # jiti src/domain.selfcheck.ts
+pnpm build      # tsc -b && vite build -> dist/
+pnpm lint       # oxlint
 ```
 
 Verificación antes de cada commit:
-`npm run check && npm run build && npm run lint`
+`pnpm check && pnpm build && pnpm lint`
 
 ## Ramas
 - main = producción. Protegida.
