@@ -1,0 +1,23 @@
+name: Feature request
+description: Propose an idea
+title: "[Feat]: "
+labels: ["enhancement", "needs-triage"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What need, not what UI. Hybrids (MHEV, HEV, PHEV, REEV) are out of scope and close as wontfix.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: Plain-language behavior
+    validations:
+      required: true
+  - type: textarea
+    id: alt
+    attributes:
+      label: Alternatives considered
