@@ -1,0 +1,16 @@
+{
+  "name": "odo",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.34.5",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "echo 'placeholder: no app scaffold yet' && exit 0",
+    "check": "echo 'placeholder: no domain self-check yet' && exit 0",
+    "build": "echo 'placeholder: no build yet' && exit 0",
+    "lint": "echo 'placeholder: no linter yet' && exit 0"
+  }
+}
