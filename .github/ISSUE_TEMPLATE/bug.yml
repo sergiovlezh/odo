@@ -1,0 +1,35 @@
+name: Bug report
+description: Something is broken
+title: "[Bug]: "
+labels: ["bug", "needs-triage"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: Actual vs expected
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: URL, vehicle type, inputs
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: Environment
+      description: Browser + OS (e.g. Chrome 126, Android 14)
+      placeholder: "Browser + OS"
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Commit hash
+      placeholder: "e.g. e54a767"
+    validations:
+      required: true
